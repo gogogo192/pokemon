@@ -1,6 +1,6 @@
 package Moves.SecondaryEffect;
 import pokemon.pokemon;
-public class paralysis implements SecondaryEffect {
+public class burn implements SecondaryEffect {
 
     @Override
     public void apply(pokemon user, pokemon target){

@@ -29,6 +29,7 @@ public class pokemon {
     private int indSpd=0;
     private EnumSet<PokeType> types;
     private List<Move> moves = new ArrayList<>();
+    private Status status = Status.NONE;
 
 
 
@@ -138,5 +139,14 @@ public class pokemon {
 
     public String getName(){
         return this.name;
+    }
+
+    public void SetStatus(Status newstatus){
+        if(this.status == Status.NONE){
+            this.status = newstatus;
+        }
+    }
+    public Status getStatus(){
+        return status;
     }
 }

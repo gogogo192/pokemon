@@ -41,5 +41,6 @@ public class flameThrower implements Move{
     @Override
     public void use(pokemon user, pokemon target){
         System.out.println(user.getName() + "의" +this.getName() +"!!");
+        effect.apply(user,target);
     }
 }
